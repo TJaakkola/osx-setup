@@ -1,0 +1,31 @@
+---
+
+brew_packages:
+  - ansible
+  - node
+  - maven
+  - git
+
+brew_pkg_with_opts:
+  - { pkg: "gnu-sed", opts: "with-default-names" }
+  - { pkg: "vim", opts: "override-system-vi" }
+  - { pkg: "wget", opts: "enable-iri" }
+
+cask_appdir: /Applications
+cask_packages:
+  - slack
+  - flowdock
+  - iterm2
+  - alfred
+  - dashlane
+  - atom
+  - spectacle
+  - java
+  - intellij-idea
+  - spotify
+  - sourcetree
+  - docker
+  - the-unarchiver
+
+npm_modules:
+  - grunt-cli
