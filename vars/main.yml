@@ -4,28 +4,33 @@ brew_packages:
   - ansible
   - node
   - maven
-  - git
+  - gradle
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+  - tree
+  - htop
+  - jq
+  - tldr
+  - bat
+  - diff-so-fancy
+  - fzf
 
-brew_pkg_with_opts:
-  - { pkg: "gnu-sed", opts: "with-default-names" }
-  - { pkg: "vim", opts: "override-system-vi" }
-  - { pkg: "wget", opts: "enable-iri" }
 
 cask_appdir: /Applications
 cask_packages:
-  - slack
-  - flowdock
   - iterm2
   - alfred
   - dashlane
-  - atom
   - spectacle
   - java
   - intellij-idea
   - spotify
-  - sourcetree
+  - whatsapp
   - docker
   - the-unarchiver
+  - appcleaner
+  - postman
+  - vlc
 
 npm_modules:
-  - grunt-cli
+  - n
