@@ -22,11 +22,7 @@
         state: present
     # Cask
     - name: install homebrew casks
-      #homebrew_cask: name={{item}} state=present install_options='appdir=homebrew_cask_appdir'
-      homebrew_cask:
-        name: '{{ item }}'
-        state: present
-        install_options: force
+      homebrew_cask: name={{item}} state=present install_options='appdir=cask_appdir'
       with_items: '{{ cask_packages }}'
     - name: upgrade homebrew casks
       homebrew_cask:

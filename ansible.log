@@ -1,0 +1,108 @@
+2020-02-12 11:17:08,999 p=97419 u=tapio.jaakkola n=ansible | PLAY [localhost] *********************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:17:09,061 p=97419 u=tapio.jaakkola n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:17:09,937 p=97419 u=tapio.jaakkola n=ansible | [WARNING]: Platform darwin on host localhost is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-02-12 11:17:09,938 p=97419 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 11:17:09,943 p=97419 u=tapio.jaakkola n=ansible | TASK [git] ***************************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:17:11,663 p=97419 u=tapio.jaakkola n=ansible | changed: [localhost]
+2020-02-12 11:17:11,668 p=97419 u=tapio.jaakkola n=ansible | TASK [homebrew] **********************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:17:21,817 p=97419 u=tapio.jaakkola n=ansible | changed: [localhost]
+2020-02-12 11:17:21,824 p=97419 u=tapio.jaakkola n=ansible | TASK [upgrade homebrew packages] *****************************************************************************************************************************************************************************************************************************
+2020-02-12 11:17:27,709 p=97419 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 11:17:27,715 p=97419 u=tapio.jaakkola n=ansible | TASK [ensure taps are tapped.] *******************************************************************************************************************************************************************************************************************************
+2020-02-12 11:17:33,254 p=97419 u=tapio.jaakkola n=ansible | failed: [localhost] (item=caskroom/versions) => {"ansible_loop_var": "item", "changed": false, "item": "caskroom/versions", "msg": "added: 0, unchanged: 0, error: failed to tap: caskroom/versions"}
+2020-02-12 11:17:40,364 p=97419 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=jmespath/jmespath)
+2020-02-12 11:17:48,065 p=97419 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=shyiko/ktlint)
+2020-02-12 11:17:48,068 p=97419 u=tapio.jaakkola n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:17:48,068 p=97419 u=tapio.jaakkola n=ansible | localhost                  : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-02-12 11:21:05,690 p=2165 u=tapio.jaakkola n=ansible | PLAY [localhost] *********************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:21:05,710 p=2165 u=tapio.jaakkola n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:21:06,470 p=2165 u=tapio.jaakkola n=ansible | [WARNING]: Platform darwin on host localhost is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-02-12 11:21:06,470 p=2165 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 11:21:06,476 p=2165 u=tapio.jaakkola n=ansible | TASK [git] ***************************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:21:07,799 p=2165 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 11:21:07,806 p=2165 u=tapio.jaakkola n=ansible | TASK [homebrew] **********************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:21:09,694 p=2165 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 11:21:09,701 p=2165 u=tapio.jaakkola n=ansible | TASK [upgrade homebrew packages] *****************************************************************************************************************************************************************************************************************************
+2020-02-12 11:21:15,549 p=2165 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 11:21:15,554 p=2165 u=tapio.jaakkola n=ansible | TASK [ensure taps are tapped.] *******************************************************************************************************************************************************************************************************************************
+2020-02-12 11:21:28,147 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=homebrew/cask)
+2020-02-12 11:21:29,670 p=2165 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=homebrew/core)
+2020-02-12 11:21:29,676 p=2165 u=tapio.jaakkola n=ansible | TASK [install homebrew packages] *****************************************************************************************************************************************************************************************************************************
+2020-02-12 11:25:28,222 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost]
+2020-02-12 11:25:28,229 p=2165 u=tapio.jaakkola n=ansible | TASK [install homebrew casks] ********************************************************************************************************************************************************************************************************************************
+2020-02-12 11:26:31,767 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=iterm2)
+2020-02-12 11:26:49,293 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=alfred)
+2020-02-12 11:27:50,039 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=dashlane)
+2020-02-12 11:28:05,015 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=spectacle)
+2020-02-12 11:48:57,398 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=java)
+2020-02-12 11:51:49,880 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=intellij-idea)
+2020-02-12 11:52:40,015 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=spotify)
+2020-02-12 11:53:13,649 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=whatsapp)
+2020-02-12 11:54:43,513 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=docker)
+2020-02-12 11:55:01,653 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=the-unarchiver)
+2020-02-12 11:55:20,450 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=appcleaner)
+2020-02-12 11:57:08,383 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=postman)
+2020-02-12 11:58:16,181 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=vlc)
+2020-02-12 11:58:16,192 p=2165 u=tapio.jaakkola n=ansible | TASK [upgrade homebrew casks] ********************************************************************************************************************************************************************************************************************************
+2020-02-12 11:58:20,064 p=2165 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 11:58:20,070 p=2165 u=tapio.jaakkola n=ansible | TASK [install npm modules] ***********************************************************************************************************************************************************************************************************************************
+2020-02-12 11:58:23,693 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost] => (item=n)
+2020-02-12 11:58:23,701 p=2165 u=tapio.jaakkola n=ansible | TASK [remove outdated brew versions from the cellar] *********************************************************************************************************************************************************************************************************
+2020-02-12 11:58:31,410 p=2165 u=tapio.jaakkola n=ansible | changed: [localhost]
+2020-02-12 11:58:31,412 p=2165 u=tapio.jaakkola n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************************************************************************************
+2020-02-12 11:58:31,412 p=2165 u=tapio.jaakkola n=ansible | localhost                  : ok=10   changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-02-12 12:42:56,937 p=34037 u=tapio.jaakkola n=ansible | ERROR! Syntax Error while loading YAML.
+  found character that cannot start any token
+
+The error appears to be in '/Users/tapio.jaakkola/code/osx-setup/playbook.yml': line 28, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      tags:
+	- cask-install
+^ here
+There appears to be a tab character at the start of the line.
+
+YAML does not use tabs for formatting. Tabs should be replaced with spaces.
+
+For example:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+#    ^--- there is a tab there.
+
+Should be written as:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+# ^--- all spaces here.
+
+2020-02-12 12:43:48,091 p=34058 u=tapio.jaakkola n=ansible | PLAY [localhost] *********************************************************************************************************************************************************************************************************************************************
+2020-02-12 12:43:48,115 p=34058 u=tapio.jaakkola n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************************************************************************************
+2020-02-12 12:43:49,030 p=34058 u=tapio.jaakkola n=ansible | [WARNING]: Platform darwin on host localhost is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2020-02-12 12:43:49,030 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 12:43:49,037 p=34058 u=tapio.jaakkola n=ansible | TASK [install homebrew casks] ********************************************************************************************************************************************************************************************************************************
+2020-02-12 12:43:51,305 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=iterm2)
+2020-02-12 12:43:53,034 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=alfred)
+2020-02-12 12:43:54,811 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=dashlane)
+2020-02-12 12:43:56,517 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=spectacle)
+2020-02-12 12:43:58,295 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=java)
+2020-02-12 12:44:00,353 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=intellij-idea)
+2020-02-12 12:44:02,081 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=spotify)
+2020-02-12 12:44:03,822 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=whatsapp)
+2020-02-12 12:44:05,612 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=docker)
+2020-02-12 12:44:07,395 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=the-unarchiver)
+2020-02-12 12:44:09,483 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=appcleaner)
+2020-02-12 12:44:11,877 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=postman)
+2020-02-12 12:44:13,672 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost] => (item=vlc)
+2020-02-12 12:44:13,680 p=34058 u=tapio.jaakkola n=ansible | TASK [upgrade homebrew casks] ********************************************************************************************************************************************************************************************************************************
+2020-02-12 12:45:06,773 p=34058 u=tapio.jaakkola n=ansible | ok: [localhost]
+2020-02-12 12:45:06,774 p=34058 u=tapio.jaakkola n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************************************************************************************
+2020-02-12 12:45:06,775 p=34058 u=tapio.jaakkola n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

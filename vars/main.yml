@@ -1,8 +1,7 @@
 ---
 brew_taps:
-  - caskroom/versions
-  - jmespath/jmespath
-  - shyiko/ktlint
+  - homebrew/cask
+  - homebrew/core
 
 brew_packages:
   - ansible
