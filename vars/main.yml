@@ -8,6 +8,7 @@ brew_packages:
   - node
   - maven
   - gradle
+  - zsh
   - zsh-autosuggestions
   - zsh-syntax-highlighting
   - tree
@@ -18,8 +19,8 @@ brew_packages:
   - diff-so-fancy
   - fzf
 
-
 cask_appdir: /Applications
+
 cask_packages:
   - iterm2
   - alfred
@@ -34,6 +35,7 @@ cask_packages:
   - appcleaner
   - postman
   - vlc
+  - visual-studio-code 
 
 npm_modules:
   - n
