@@ -7,7 +7,6 @@ brew_packages:
   - ansible
   - node
   - maven
-  - gradle
   - zsh
   - zsh-autosuggestions
   - zsh-syntax-highlighting
@@ -18,24 +17,24 @@ brew_packages:
   - bat
   - diff-so-fancy
   - fzf
+  - pyenv
 
 cask_appdir: /Applications
 
 cask_packages:
-  - iterm2
+  
   - alfred
-  - dashlane
-  - spectacle
-  - java
-  - intellij-idea
-  - spotify
-  - whatsapp
-  - docker
-  - the-unarchiver
   - appcleaner
-  - postman
-  - vlc
+  - dashlane
+  - docker
+  - iterm2
+  - intellij-idea
+  - java
+  - spectacle
+  - spotify
+  - the-unarchiver
   - visual-studio-code 
+  - whatsapp
 
 npm_modules:
   - n
